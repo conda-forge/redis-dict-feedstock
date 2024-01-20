@@ -1,13 +1,13 @@
 {% set name = "redis-dict" %}
-{% set version = "2.1.0" %}
+{% set version = "2.3.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/redis dict-{{ version }}.tar.gz"  # note a blank space in the name!
-  sha256: 4148e78f81e2bce0a38deb67fce5e9af84e9b83a65a39772276df184caf10c6e
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz" # note a blank space in the name!
+  sha256: f45c6251b8a84455f49faed638ee80d7cefc0ca6838d567afbfae47f5a07bcd8
 
 build:
   noarch: python
