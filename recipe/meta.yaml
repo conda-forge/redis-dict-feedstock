@@ -1,5 +1,5 @@
 {% set name = "redis-dict" %}
-{% set version = "2.3.2" %}
+{% set version = "2.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/redis_dict-{{ version }}.tar.gz
-  sha256: f45c6251b8a84455f49faed638ee80d7cefc0ca6838d567afbfae47f5a07bcd8
+  sha256: ddb18709da1ade16ef0061275731436d5bd25660efbe63a8c3f5a8769fdfad27
 
 build:
   noarch: python
